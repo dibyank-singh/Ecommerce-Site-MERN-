@@ -5,24 +5,53 @@ import styled from "styled-components"
 
 
 const Container=styled.div`
+    flex: 1;
+    margin: 8px;
+    height: 80vh;
+    position: relative;
+`
+const Image=styled.img`
+height: 100%;
+width: 100%;
+/* object-fit: cover; */
+
+ 
+`
+
+
+const InfoWrapper=styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+`
+const Title=styled.h1`
+color: #FFFFFF;
+
     
 `
-const Image=styled.div`
-    
-`
-const Title=styled.div`
-    
-`
-const Button=styled.div`
-    
+const Button=styled.button`
+border: none;
+padding: 10px 20px;
+background-color:#FFFFFF ;
+color:gray;
+cursor: Pointer;
 `
 
 const Category = ({elem}) => {
   return (
   <Container>
-    <Image>{elem.img}</Image>
+    <Image src={elem.img} alt="Categories Image"/>
+    <InfoWrapper>
     <Title>{elem.title}</Title>
     <Button>Shop Now</Button>
+    </InfoWrapper>
   </Container>
   )
 }

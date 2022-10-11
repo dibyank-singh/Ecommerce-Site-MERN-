@@ -5,8 +5,9 @@ import {CategoriesData} from "../../Constant/Data.js"
 // Styled Css 
 
 const Container=styled.div`
-height: 60vh;
+padding: 25px;
 display: flex;
+justify-content: space-around;
 
 `
 
@@ -18,7 +19,6 @@ const Categories = () => {
            <Category elem={elem} />
          ))
        }
-
     </Container>
   )
 }
