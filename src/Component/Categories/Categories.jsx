@@ -5,7 +5,7 @@ import {CategoriesData} from "../../Constant/Data.js"
 // Styled Css 
 
 const Container=styled.div`
-padding: 25px;
+padding: 30px;
 display: flex;
 justify-content: space-around;
 

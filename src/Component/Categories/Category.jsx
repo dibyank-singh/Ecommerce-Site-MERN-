@@ -7,7 +7,7 @@ import styled from "styled-components"
 const Container=styled.div`
     flex: 1;
     margin: 8px;
-    height: 80vh;
+    height: 65vh;
     position: relative;
 `
 const Image=styled.img`

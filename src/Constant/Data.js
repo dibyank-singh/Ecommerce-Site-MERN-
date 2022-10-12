@@ -48,3 +48,46 @@ export const CategoriesData=[
   
 
 ]
+
+export const ProductsData=[
+    {
+        id:1,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:2,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:3,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:4,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:5,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:6,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:7,
+        img:"./Img/pngwing.com.png",
+
+    },
+    {
+        id:8,
+        img:"./Img/pngwing.com.png",
+
+    },
+]
