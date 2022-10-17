@@ -45,7 +45,7 @@ const Notification = () => {
   return (
     <Container>
    <Title>Subscribe To Get Early Update</Title>
-   <Discription>Hey, To Gen Notifiction of newly lunch products, Please Subscribe to our newsletter</Discription>
+   <Discription>Hey, To Get Notifiction of newly lunch products, Please Subscribe to our newsletter</Discription>
    <InsideContainer>
     <Input placeholder=' Enter Your Email...'/>
     <Button> <Send/></Button>

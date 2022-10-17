@@ -1,4 +1,4 @@
-import { Facebook, GitHub, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
+import { Facebook, GitHub, LinkedIn, MailOutline, Phone, Room, Twitter, YouTube } from '@mui/icons-material'
 import React from 'react'
 import  styled from "styled-components"
 
@@ -46,16 +46,37 @@ const Center=styled.div`
 flex: 1;
 `
 const Title=styled.h2 `
+font-size: 30px;
+font-weight: 600;
 
 `
 const LinkUl=styled.ul `
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
 
 `
 const Linklist=styled.li `
+font-size: 15px;
+font-weight: 600;
+width: 50%;
+margin-bottom: 8px;
+cursor: pointer;
 
 `
 const Right=styled.div`
 flex: 1;
+`
+
+const Items=styled.p `
+font-size: 15px;
+font-weight: 600;
+display: flex;
+align-items: center;
+margin-bottom: 10px; 
+opacity: 0.8;
 `
 
 const Footer = () => {
@@ -82,10 +103,24 @@ const Footer = () => {
         <Center>
             <Title>Site Links</Title>
             <LinkUl>
-             <Linklist></Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
+             <Linklist>Social icon</Linklist>
             </LinkUl>
         </Center>
-        <Right></Right>
+        <Right>
+            
+                <Title> Contact Us </Title>
+                <Items> <Room/> Parsa Nagar, West Champaran, Bihar 845454</Items>
+                <Items> <Phone/> 8709448779</Items>
+                <Items> <MailOutline/> Dibyankkumarsingh@gmail.com</Items>
+            
+        </Right>
 
     </Container>
   )
