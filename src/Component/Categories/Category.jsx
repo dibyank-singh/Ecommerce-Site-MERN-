@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 
@@ -47,11 +48,13 @@ cursor: Pointer;
 const Category = ({elem}) => {
   return (
   <Container>
+    <Link to={`/products/${elem.cat}`}>
     <Image src={elem.img} alt="Categories Image"/>
     <InfoWrapper>
     <Title>{elem.title}</Title>
     <Button>Shop Now</Button>
     </InfoWrapper>
+    </Link>
   </Container>
   )
 }

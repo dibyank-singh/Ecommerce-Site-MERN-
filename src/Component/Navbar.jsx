@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge'
+import {Link} from "react-router-dom"
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
@@ -55,8 +56,22 @@ const MenuItems= styled.div`
 font-size: 16px;
 cursor: pointer;
 margin-right: 24px;
-
 `
+const NavbarLink = styled(Link)`
+color: black;
+ font-size: 22px;
+ font-weight: 600;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+ margin: 10px;
+&:hover,
+&:focus{
+    color: blue;
+}
+&:active{
+    color: red;
+}`;
+
 const Navbar = () => {
     return (
         <Container>
@@ -72,8 +87,8 @@ const Navbar = () => {
                     <h3 style={{fontweight:900}} >Shop Shine</h3>
                 </CenterNav>
                 <RightNav>
-                    <MenuItems>Register</MenuItems>
-                    <MenuItems>SignIn</MenuItems>
+                   <NavbarLink to={"/register"}> <MenuItems>Register</MenuItems> </NavbarLink>
+                   <NavbarLink to={"login"}><MenuItems>SignIn</MenuItems> </NavbarLink> 
                     <MenuItems>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlinedIcon color="action" />

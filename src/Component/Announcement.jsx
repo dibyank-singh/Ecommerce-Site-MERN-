@@ -16,7 +16,8 @@ height: 32px;
 const Announcement = () => {
   return (
     <Container>
-      <p>  Diwali & Chhat Dhamaka ! Free Delevery On Order Above 599 Rs.</p>
+      {/* <p>  Diwali & Chhat Dhamaka ! Free Delevery On Order Above 599 Rs.</p> */}
+      <p> This Site is Under Construction, Backend Integration work is going on, Stay Tuned... </p>
     </Container>
   )
 }

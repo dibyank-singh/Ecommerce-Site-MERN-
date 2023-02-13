@@ -74,12 +74,17 @@ transition: all 0.4s ease;
 `
 
 const Product = ({elem}) => {
+
+    console.log(elem)
+
   return (
+
     <Container>
         <Circle/>
+        
         <Image src={elem.img} />
         <InfoContainer>
-            <Icon><AddShoppingCartOutlinedIcon/>  </Icon>
+            <Icon><AddShoppingCartOutlinedIcon/></Icon>
             <Icon><SearchOutlinedIcon/> </Icon>
             <Icon><FavoriteBorderOutlinedIcon/></Icon>
         </InfoContainer>

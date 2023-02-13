@@ -13,11 +13,12 @@ flex-wrap: wrap;
 `
 
 const Products = () => {
+  console.log(ProductsData)
   return (
     <Container>
      {
       ProductsData.map((elem)=>(
-        <Product  elem={elem} key={elem.id}  />
+        <Product elem={elem} key={elem.id} />
       ))
      }
     </Container>

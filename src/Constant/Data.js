@@ -30,19 +30,23 @@ export const CategoriesData=[
     {
         id:1,
         img:"./Img/img12.jpg",
-        title:"Shirt Style"
+        title:"Shirt Style",
+        cat:"Girls-suit"
 
     },
     {
         id:2,
         img:"./Img/img10 .jpg",
-        title:"Shirt Style"
+        title:"Shirt Style",
+        cat:"Women-Sharee"
+
 
     },
     {
         id:3,
         img:"./Img/img11.jpg",
-        title:"Shirt Style"
+        title:"Shirt Style",
+        cat:"Girls-Jeans"
 
     },
   
@@ -59,7 +63,7 @@ export const ProductsData=[
     {
         id:2,
         img:"./Img/pngwing.com.png",
-
+ 
     },
     {
         id:3,
